@@ -1,3 +1,4 @@
+
 import argparse
 
 parser = argparse.ArgumentParser()
@@ -9,7 +10,7 @@ parser.add_argument('--save_path', type=str, help='path for total downloaded dat
 parser.add_argument('--destination_path', type=str, help='path for total downloaded data',
                     default='./save_list/original')
 parser.add_argument('--max_count', type=int, help='the number of keyword count',
-                    default=40)
+                    default=30)
 
 args = parser.parse_args()
 SCRIPT_LIST = args.script_list

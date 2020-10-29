@@ -1,30 +1,39 @@
 
 from keyword_list.keyword import load_dict
 
-
 def load_txt(filename, max_val):
 
     try:
+
+        # f = open(filename, 'rt')
         f = open(filename, 'rt', encoding='utf-8')
         script_cue = list()
+        idx_line = 0
 
         while True:
             line = f.readline()
 
-            if not line:
-                break
+            if line == '\n':
+                pass
 
-            line = line.strip()
-            keyword_set = load_dict(max_val)
-            re_line, is_keyword = check_keyword(line, keyword_set)
-            script_cue.append(re_line)
+            else:
+                idx_line = idx_line+1
+                print("line of script  : %d " %idx_line)
+
+                if not line:
+                    break
+
+                line = line.strip()
+                keyword_set = load_dict(max_val)
+                re_line, is_keyword = check_keyword(line, keyword_set)
+                script_cue.append(re_line)
 
         f.close()
 
     except:
 
         is_keyword = False
-        print('error')
+        print('error\n')
 
     return script_cue, is_keyword
 

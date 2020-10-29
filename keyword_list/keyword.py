@@ -18,7 +18,7 @@ def load_dict(max_val):
     # load keyword
     violence_list = pd.read_excel('./keyword_list/load_keyword.xlsx', sheet_name=None)
 
-    sheet_list = ['1(협박)', '2(갈취)', '3(직장내)', '4(기타)']
+    sheet_list = ['class_1(협박)', 'class_2(갈취)', 'class_3(직장)', 'class_4(기타)']
     keyword_cue = [idx for idx in range(len(violence_list))]
 
     for idx in range(len(violence_list)):
