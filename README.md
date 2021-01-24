@@ -18,7 +18,7 @@ cmd /k
 ```
 
 Here, 
-- script_list : path for total downloaded data
-- save_path : path for total downloaded data
-- destination_path : path for total downloaded data
+- script_list : scripts of korean movies and drama
+- save_path : script with violence keyword 
+- destination_path : scripts without violence keyword
 - max_count : the number of keyword count
