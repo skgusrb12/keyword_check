@@ -18,7 +18,7 @@ cmd /k
 ```
 
 Here, 
-- script_list : 
-- save_path :
-- destination_path :
-- max_count :
+- script_list : path for total downloaded data
+- save_path : path for total downloaded data
+- destination_path : path for total downloaded data
+- max_count : the number of keyword count
