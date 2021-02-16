@@ -18,7 +18,7 @@ cmd /k
 ```
 
 Here, 
-- script_list : scripts of korean movies and drama
+- script_list : scripts of korean movies and soap opera
 - save_path : script with violence keyword 
 - destination_path : scripts without violence keyword
 - max_count : the number of keyword count
